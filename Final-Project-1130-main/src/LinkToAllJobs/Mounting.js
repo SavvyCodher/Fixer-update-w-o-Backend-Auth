@@ -3,6 +3,16 @@ import './Mounting.css'
 
 
 const Mounting = () => {
+
+  const handleClick = () => {
+    
+    //redirect to add a job form//
+    console.log("Take me to the flooring form");
+  }
+
+  const handleClickAgain = () => {
+    console.log("consult");
+  }
    return(
 <>
        <nav className="bg-black navbar-dark py-3">
@@ -32,8 +42,8 @@ const Mounting = () => {
          <div className="card-body border primary">
          <h5 className="card-title">Garage Storage Mounting </h5>
            <h5 className="card-title">
-           <a href="#" className="btn btn-primary mt-3">Apply To Job Request</a>
-           <a href="#" className="btn btn-primary mt-3">Request Consultation</a>
+           <a href="/AddJob" className="btn btn-primary mt-3" onClick={handleClick}>Add Job</a>
+            <a href="/Consult" className="btn btn-primary mt-3"onClick={handleClickAgain}>Request Consultation</a>
            </h5>
          </div>
          </div>
@@ -45,8 +55,8 @@ const Mounting = () => {
          <div className="card-body border primary">
          <h5 className="card-title">TV Mounting</h5>
            <h5 className="card-title">
-           <a href="#" className="btn btn-primary mt-3">Apply To Job Request</a>
-           <a href="#" className="btn btn-primary mt-3">Request Consultation</a>
+           <a href="/AddJob" className="btn btn-primary mt-3" onClick={handleClick}>Add Job</a>
+            <a href="/Consult" className="btn btn-primary mt-3"onClick={handleClickAgain}>Request Consultation</a>
            </h5>
          </div>
          </div>
@@ -71,8 +81,8 @@ const Mounting = () => {
          <div className="card-body border primary">
          <h5 className="card-title">Beam Mounting/Installation</h5>
            <h5 className="card-title">
-           <a href="#" className="btn btn-primary mt-3">Apply To Job Request</a>
-           <a href="#" className="btn btn-primary mt-3">Request Consultation</a>
+           <a href="/AddJob" className="btn btn-primary mt-3" onClick={handleClick}>Add Job</a>
+            <a href="/Consult" className="btn btn-primary mt-3"onClick={handleClickAgain}>Request Consultation</a>
            </h5>
          </div>
          </div>
@@ -84,9 +94,9 @@ const Mounting = () => {
          <div className="card-body border primary">
          <h5 className="card-title">Artwork Mounting</h5>
            <h5 className="card-title">
-           <a href="#" className="btn btn-primary mt-3">Apply To Job Request</a>
-           <a href="#" className="btn btn-primary mt-3">Request Consultation</a>
-           </h5>
+           <a href="/AddJob" className="btn btn-primary mt-3" onClick={handleClick}>Add Job</a>
+            <a href="/Consult" className="btn btn-primary mt-3"onClick={handleClickAgain}>Request Consultation</a>
+            </h5>
            </div>
          </div>
          </div>

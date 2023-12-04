@@ -3,6 +3,16 @@ import './HomeSecurity.css'
 
 
 const HomeSecurity = () => {
+
+  const handleClick = () => {
+    
+    //redirect to add a job form//
+    console.log("Take me to the flooring form");
+  }
+
+  const handleClickAgain = () => {
+    console.log("consult");
+  }
    return(
 <>
        <nav className="bg-black navbar-dark py-3">
@@ -14,6 +24,7 @@ const HomeSecurity = () => {
    <div className="row"/>
      <div className="btn toolbar align-items-center"> <Navbar /></div>
      </nav>
+     
      
  
         <div className="container fs-2 p-3 fw-bold text-center">
@@ -32,8 +43,8 @@ const HomeSecurity = () => {
          <div className="card-body border primary">
          <h5 className="card-title">Installing Security Devices</h5>
            <h5 className="card-title">
-           <a href="#" className="btn btn-primary mt-3">Apply To Job Request</a>
-           <a href="#" className="btn btn-primary mt-3">Request Consultation</a>
+           <a href="/AddJob" className="btn btn-primary mt-3" onClick={handleClick}>Post A Job Request</a>
+            <a href="/Consult" className="btn btn-primary mt-3"onClick={handleClickAgain}>Request Consultation</a>
            </h5>
          </div>
          </div>
@@ -45,8 +56,8 @@ const HomeSecurity = () => {
          <div className="card-body border primary">
          <h5 className="card-title">Security Device Technical Support</h5>
            <h5 className="card-title">
-           <a href="#" className="btn btn-primary mt-3">Apply To Job Request</a>
-           <a href="#" className="btn btn-primary mt-3">Request Consultation</a>
+           <a href="/AddJob" className="btn btn-primary mt-3" onClick={handleClick}>Post A Job Request</a>
+           <a href="/Consult" className="btn btn-primary mt-3"onClick={handleClickAgain}>Request Consultation</a>
            </h5>
          </div>
          </div>

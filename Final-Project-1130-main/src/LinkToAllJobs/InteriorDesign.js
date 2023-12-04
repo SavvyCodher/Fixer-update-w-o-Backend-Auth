@@ -3,6 +3,16 @@ import './InteriorDesign.css'
 
 
 const InteriorDesign = () => {
+
+  const handleClick = () => {
+    
+    //redirect to add a job form//
+    console.log("Take me to the flooring form");
+  }
+
+  const handleClickAgain = () => {
+    console.log("consult");
+  }
    return(
 <>
        <nav className="bg-black navbar-dark py-3">
@@ -30,10 +40,10 @@ const InteriorDesign = () => {
        <div className="card h-100" style={{width: 225}}>
          <img src="https://i.postimg.cc/RZQ548JD/FH05-OCT-KITCAB-01-2.jpg" className="card-img-top" alt="..." width="150px" height="150px"/>
          <div className="card-body border primary">
-         <h5 className="card-title">Cabinet Replacement</h5>
+         <h5 className="card-title">Cabinets</h5>
            <h5 className="card-title">
-           <a href="#" className="btn btn-primary mt-3">Apply To Job Request</a>
-           <a href="#" className="btn btn-primary mt-3">Request Consultation</a>
+           <a href="/AddJob" className="btn btn-primary mt-3" onClick={handleClick}>Post a Job Request</a>
+            <a href="/Consult" className="btn btn-primary mt-3"onClick={handleClickAgain}>Request Consultation</a>
            </h5>
          </div>
          </div>
@@ -43,10 +53,10 @@ const InteriorDesign = () => {
          <div className="card h-100" style={{width: 225}}>
          <img src="https://i.postimg.cc/3Nd0HmLt/istockphoto-1322440301-612x612-1.jpg" className="card-img-top" alt="..." width="150px" height="150px"/>
          <div className="card-body border primary">
-         <h5 className="card-title">Countertop Replacement</h5>
+         <h5 className="card-title">Countertops</h5>
            <h5 className="card-title">
-           <a href="#" className="btn btn-primary mt-3">Apply To Job Request</a>
-           <a href="#" className="btn btn-primary mt-3">Request Consultation</a>
+           <a href="/AddJob" className="btn btn-primary mt-3" onClick={handleClick}>Post a Job Request</a>
+            <a href="/Consult" className="btn btn-primary mt-3"onClick={handleClickAgain}>Request Consultation</a>
            </h5>
          </div>
          </div>
@@ -69,10 +79,10 @@ const InteriorDesign = () => {
          <div className="card h-100" style={{width: 225}}>
          <img src="https://i.postimg.cc/Hs16dtDJ/640962ccbd5d36c48960b46e-lyb-workers.jpg" className="card-img-top" alt="..." width="150px" height="150px"/>
          <div className="card-body border primary">
-         <h5 className="card-title">Bathroom Renovation</h5>
+         <h5 className="card-title">Bathroom</h5>
            <h5 className="card-title">
-           <a href="#" className="btn btn-primary mt-3">Apply To Job Request</a>
-           <a href="#" className="btn btn-primary mt-3">Request Consultation</a>
+           <a href="/AddJob" className="btn btn-primary mt-3" onClick={handleClick}>Post a Job Request</a>
+            <a href="/Consult" className="btn btn-primary mt-3"onClick={handleClickAgain}>Request Consultation</a>
            </h5>
          </div>
          </div>
@@ -82,10 +92,10 @@ const InteriorDesign = () => {
          <div className="card h-100" style={{width: 225}}>
          <img src="https://i.postimg.cc/ZqJRS2jf/Subway-Tile-Backsplash-Hang-Put-Tile-Sheet-Up.jpg" className="card-img-top" alt="..." width="150px" height="150px"/>
          <div className="card-body border primary">
-         <h5 className="card-title">Kitchen Backsplash Replacement</h5>
+         <h5 className="card-title">Kitchen Backsplash</h5>
            <h5 className="card-title">
-           <a href="#" className="btn btn-primary mt-3">Apply To Job Request</a>
-           <a href="#" className="btn btn-primary mt-3">Request Consultation</a>
+           <a href="/AddJob" className="btn btn-primary mt-3" onClick={handleClick}>Post a Job Request</a>
+            <a href="/Consult" className="btn btn-primary mt-3"onClick={handleClickAgain}>Request Consultation</a>
            </h5>
            </div>
          </div>

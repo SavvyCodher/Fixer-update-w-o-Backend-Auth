@@ -34,83 +34,61 @@ const Flooring = () => {
         {/*<div className="btn-toolbar"><button>Request Consultation</button><button>Add A Job</button></div> */}
 
         <div classname="container p-3">
-        <div className="col-sm col p-4 fs-2">
+       <div className="col-sm col p-4 fs-2">
           <p>IndyFIXER offers flooring services from experienced contractors that are licensed, bonded, and insured.  We are well qualified to meet your needs and deliver 100% satisfaction.  With our job right guarantee you can schedule with confidence and know that our job isn't done until it meets the customer standards. You can customize your service based on these flooring types: </p>
-        
-          <div className="container align-items-lg-stretch">
+        </div>
+
+    
+ 
+  <div className="container align-items-center">
     <div className="container row bg-white-subtle p-4 justify-content-around">
-        <div className="col-sm col mb-5">  
-        <div className="card h-100" style={{width: 225}}>
-          <img src="https://i.postimg.cc/nMf9g5wT/vinyl.jpg" className="card-img-top" alt="..." width="150px" height="150px"/>
+    <div className="col-sm col "> 
+    <div className="card h-100" style={{width: 225}}>
+    <img src="https://i.postimg.cc/nMf9g5wT/vinyl.jpg" className="card-img-top" alt="..." width="150px" height="150px"/>
           <div className="card-body border primary">
           <h5 className="card-title">Vinyl</h5>
-            <h5 className="card-title">
-            <a href="/AddJob" className="btn btn-primary mt-3" onClick={handleClick}>Post A Job Request</a>
-            <a href="/Consult" className="btn btn-primary mt-3"onClick={handleClickAgain}>Request Consultation</a>
-            </h5>
-          </div>
-          </div>
-          </div>
-
-          <div className="col-sm col mb-5"> 
-          <div className="card h-100" style={{width: 225}}>
-          <img src="https://i.postimg.cc/HkB9Kwb5/Hardwood-flooring.jpg" className="card-img-top" alt="..." width="150px" height="150px"/>
+     </div> </div></div>
+     <div className="col-sm col"> 
+    <div className="card h-100" style={{width: 225}}>
+    <img src="https://i.postimg.cc/HkB9Kwb5/Hardwood-flooring.jpg" className="card-img-top" alt="..." width="150px" height="150px"/>
           <div className="card-body border primary">
           <h5 className="card-title">Wood</h5>
-            <h5 className="card-title">
-            <a href="/AddJob" className="btn btn-primary mt-3" onClick={handleClick}>Post A Job Request</a>
-            <a href="/Consult" className="btn btn-primary mt-3"onClick={handleClickAgain}>Request Consultation</a>
-            </h5>
-          </div>
-          </div>
-          </div>
-         
-          <div className="col-sm col mb-5"> 
-          <div className="card h-100" style={{width: 225}}>
-          <img src="https://i.postimg.cc/X7nFbZjg/laminate.jpg" className="card-img-top" alt="..." width="150px" height="150px"/>
+     </div> </div></div>
+     <div className="col-sm col"> 
+    <div className="card h-100" style={{width: 225}}>
+    <img src="https://i.postimg.cc/X7nFbZjg/laminate.jpg" className="card-img-top" alt="..." width="150px" height="150px"/>
           <div className="card-body border primary">
           <h5 className="card-title">Laminate</h5>
-            <h5 className="card-title">
-            <a href="/AddJob" className="btn btn-primary mt-3" onClick={handleClick}>Post A Job Request</a>
-            <a href="/Consult" className="btn btn-primary mt-3"onClick={handleClickAgain}>Request Consultation</a>
-            </h5>
-          </div>
-          </div>
-          </div>
-        
-          <div className="col-sm col mb-5"> 
-          <div className="card h-100" style={{width: 225}}>
-          <img src="https://i.postimg.cc/3xVddWTV/carpet.jpg" className="card-img-top" alt="..." width="150px" height="150px"/>
+     </div> </div></div>
+     <div className="col-sm col"> 
+    <div className="card h-100" style={{width: 225}}>
+    <img src="https://i.postimg.cc/3xVddWTV/carpet.jpg" className="card-img-top" alt="..." width="150px" height="150px"/>
           <div className="card-body border primary">
           <h5 className="card-title">Carpet</h5>
-            <h5 className="card-title">
-            <a href="/AddJob" className="btn btn-primary mt-3" onClick={handleClick}>Post A Job Request</a>
-            <a href="/Consult" className="btn btn-primary mt-3"onClick={handleClickAgain}>Request Consultation</a>
-            </h5>
-          </div>
-          </div>
-          </div>
-      
-          <div className="col-sm col mb-5"> 
-          <div className="card h-100" style={{width: 225}}>
+     </div> </div></div>
+     <div className="col-sm col"> 
+    <div className="card h-100" style={{width: 225}}>
           <img src="https://i.postimg.cc/RZ6059HR/tile.jpg" className="card-img-top" alt="..." width="150px" height="150px"/>
           <div className="card-body border primary">
           <h5 className="card-title">Tile</h5>
-            <h5 className="card-title">
+     </div> </div></div>
+  <div className="card-footer  text-muted">
+  <h5 className="card-title">
             <a href="/AddJob" className="btn btn-primary mt-3" onClick={handleClick}>Post A Job Request</a>
             <a href="/Consult" className="btn btn-primary mt-3"onClick={handleClickAgain}>Request Consultation</a>
             </h5>
-            </div>
-          </div>
-          </div>
-          </div>
-          </div>
+  </div>
+  </div>
+  </div>
+
+    
+  
      
-          <p>
-            If you have any questions or would like ideas before you create a job, please request an online consultation to ensure we can handle your request in the most efficient way to meet your needs.  If you are ready to schedule click the add a job tab above and someone will contact you.
+  <p className="col-sm col p-4 fs-2">
+            If you have any questions or would like ideas before you create a job, please request an online consultation to ensure we can handle your request in the most efficient way to meet your needs.  If you are ready to schedule click the post a job tab above to begin.
           </p>
         </div>
-        </div>
+        
 
         <div className="col-sm fs-5 fs-2">           
     <footer className="bg-black text-white text-center position-relative">
@@ -118,7 +96,8 @@ const Flooring = () => {
         <div  className="position-absolute bottom-0 end-0">
     </div>
 </footer>
-</div>           
+</div>   
+       
       </>
     )
   }

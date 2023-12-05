@@ -12,16 +12,22 @@ import AddJob from './LinkToAllJobs/AddJob';
 import Consult from './LinkToAllJobs/Consult';
 
 
+
+
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
+
+ 
+  
    <BrowserRouter>
       <div className="App">
          <div id="page-body">
             <Routes>
                <Route path="/" element={<HomeWebPage />}/>
-               <Route path="/floor" element={<Flooring />}/>
+               <Route path="/flooring" element={<Flooring />}/>
                <Route path="/security" element={<HomeSecurity />}/>
                <Route path="/house" element={<HouseKeeping />}/>
                <Route path="/interior" element={<InteriorDesign />}/>
@@ -34,7 +40,7 @@ function App() {
             </Routes>
          </div>
       </div>
-   </BrowserRouter>
+  </BrowserRouter> 
   )
 }
 

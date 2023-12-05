@@ -2,6 +2,7 @@ import Navbar from "../Pages/Navbar";
 import './Plumbing.css'
 
 
+
 const Plumbing = () => {
 
   const handleClick = () => {
@@ -28,35 +29,77 @@ const Plumbing = () => {
  
         <div className="container fs-2 p-3 fw-bold text-center">
         Plumbing Services</div>
-       {/*<div className="btn-toolbar"><button>Request Service</button><button>Apply to Request</button></div> */}
+       {/*<div classNameName="btn-toolbar"><button>Request Service</button><button>Apply to Request</button></div> */}
 
-       <div classname="container p-3">
+       <div className="container p-3">
        <div className="col-sm col p-4 fs-2">
          <p>IndyFIXER allows experienced individuals in plumbing to offer their expertise to help serve the public in need quick services.  We are well qualified to meet your needs and deliver 100% satisfaction.  With our job right guarantee you can schedule with confidence and know that our job isn't done until it meets the customer standards. </p>
-       
-         <div className="container align-items-lg-stretch">
-   <div className="container row bg-white-subtle p-4 justify-content-around">
-       <div className="col-sm col mb-5">  
+       </div>
+
+
+  
+    <div className="container row bg-white-subtle p-4 ">
+    <div className="col-sm col">  
        <div className="card h-100" style={{width: 225}}>
-         <img src="https://i.postimg.cc/SRzRdYBb/Getty-Images-1221145802-edited.jpg" className="card-img-top" alt="..." width="150px" height="150px"/>
+       <img src="https://i.postimg.cc/SRzRdYBb/Getty-Images-1221145802-edited.jpg" className="card-img-top" alt="..." width="150px" height="150px"/>
          <div className="card-body border primary">
          <h5 className="card-title">Drain Cleaning</h5>
-           <h5 className="card-title">
-           <a href="/AddJob" className="btn btn-primary mt-3" onClick={handleClick}>Post A Job Request</a>
-            <a href="/Consult" className="btn btn-primary mt-3"onClick={handleClickAgain}>Request Consultation</a>
+     </div> </div></div>
+     <div className="col-sm col"> 
+         <div className="card h-100" style={{width: 225}}>
+         <img src="https://i.postimg.cc/rFkRjQwh/plumbing-water-heaters-9-by-4.jpg" className="card-img-top" alt="..." width="150px" height="150px"/>
+         <div className="card-body border primary">
+         <h5 className="card-title">Water Heater Repair</h5>
+     </div> </div></div>
+     <div className="col-sm col"> 
+         <div className="card h-100" style={{width: 225}}>
+         <img src="https://i.postimg.cc/J4GvTcYk/image.jpg" className="card-img-top" alt="..." width="150px" height="150px"/>
+         <div className="card-body border primary">
+         <h5 className="card-title">Commercial Plumbing</h5>
+     </div> </div></div>
+     <div className="col-sm col"> 
+         <div className="card h-100" style={{width: 225}}>
+         <img src="https://i.postimg.cc/Ls0ky7Cd/image.jpg" className="card-img-top" alt="..." width="150px" height="150px"/>
+         <div className="card-body border primary">
+         <h5 className="card-title">Water Leak Repair</h5>
+     </div> </div></div>
+    
+  <div className="card-footer  text-muted">
+  <h5 className="card-title">
+          <a href="/AddJob" className="btn btn-primary mt-3" onClick={handleClick}>Post A Job Request</a>
+            <a href="/Consult" className="btn btn-primary mt-3"onClick={handleClickAgain}>Request Consultation</a></h5>
+            </div>
+            </div>
+            </div>
+         
+
+           
+ 
+
+
+           {/*     <div classNameName="container align-items-lg-stretch">
+   <div classNameName="container row bg-white-subtle p-4 justify-content-around">
+       <div classNameName="col-sm col mb-5">  
+       <div classNameName="card h-100" style={{width: 225}}>
+         <img src="https://i.postimg.cc/SRzRdYBb/Getty-Images-1221145802-edited.jpg" classNameName="card-img-top" alt="..." width="150px" height="150px"/>
+         <div classNameName="card-body border primary">
+         <h5 classNameName="card-title">Drain Cleaning</h5>
+           <h5 classNameName="card-title">
+           <a href="/AddJob" classNameName="btn btn-primary mt-3" onClick={handleClick}>Post A Job Request</a>
+            <a href="/Consult" classNameName="btn btn-primary mt-3"onClick={handleClickAgain}>Request Consultation</a>
            </h5>
          </div>
          </div>
          </div>
 
-         <div className="col-sm col mb-5"> 
-         <div className="card h-100" style={{width: 225}}>
-         <img src="https://i.postimg.cc/rFkRjQwh/plumbing-water-heaters-9-by-4.jpg" className="card-img-top" alt="..." width="150px" height="150px"/>
-         <div className="card-body border primary">
-         <h5 className="card-title">Water Heater Repair</h5>
-           <h5 className="card-title">
-           <a href="/AddJob" className="btn btn-primary mt-3" onClick={handleClick}>Post A Job Request</a>
-            <a href="/Consult" className="btn btn-primary mt-3"onClick={handleClickAgain}>Request Consultation</a>
+    <div classNameName="col-sm col mb-5"> 
+         <div classNameName="card h-100" style={{width: 225}}>
+         <img src="https://i.postimg.cc/rFkRjQwh/plumbing-water-heaters-9-by-4.jpg" classNameName="card-img-top" alt="..." width="150px" height="150px"/>
+         <div classNameName="card-body border primary">
+         <h5 classNameName="card-title">Water Heater Repair</h5>
+           <h5 classNameName="card-title">
+           <a href="/AddJob" classNameName="btn btn-primary mt-3" onClick={handleClick}>Post A Job Request</a>
+            <a href="/Consult" classNameName="btn btn-primary mt-3"onClick={handleClickAgain}>Request Consultation</a>
            </h5>
          </div>
          </div>
@@ -64,38 +107,44 @@ const Plumbing = () => {
         
          
        
-         <div className="col-sm col mb-5"> 
-         <div className="card h-100" style={{width: 225}}>
-         <img src="https://i.postimg.cc/J4GvTcYk/image.jpg" className="card-img-top" alt="..." width="150px" height="150px"/>
-         <div className="card-body border primary">
-         <h5 className="card-title">Commercial Plumbing</h5>
-           <h5 className="card-title">
-           <a href="/AddJob" className="btn btn-primary mt-3" onClick={handleClick}>Post A Job Request</a>
-            <a href="/Consult" className="btn btn-primary mt-3"onClick={handleClickAgain}>Request Consultation</a>
+        <div classNameName="col-sm col mb-5"> 
+         <div classNameName="card h-100" style={{width: 225}}>
+         <img src="https://i.postimg.cc/J4GvTcYk/image.jpg" classNameName="card-img-top" alt="..." width="150px" height="150px"/>
+         <div classNameName="card-body border primary">
+         <h5 classNameName="card-title">Commercial Plumbing</h5>
+           <h5 classNameName="card-title">
+           <a href="/AddJob" classNameName="btn btn-primary mt-3" onClick={handleClick}>Post A Job Request</a>
+            <a href="/Consult" classNameName="btn btn-primary mt-3"onClick={handleClickAgain}>Request Consultation</a>
            </h5>
          </div>
          </div>
          </div>
      
-         <div className="col-sm col mb-5"> 
-         <div className="card h-100" style={{width: 225}}>
-         <img src="https://i.postimg.cc/Ls0ky7Cd/image.jpg" className="card-img-top" alt="..." width="150px" height="150px"/>
-         <div className="card-body border primary">
-         <h5 className="card-title">Water Leak Repair</h5>
-           <h5 className="card-title">
-           <a href="/AddJob" className="btn btn-primary mt-3" onClick={handleClick}>Post A Job Request</a>
-            <a href="/Consult" className="btn btn-primary mt-3"onClick={handleClickAgain}>Request Consultation</a>
+       {/* <div classNameName="col-sm col mb-5"> 
+         <div classNameName="card h-100" style={{width: 225}}>
+         <img src="https://i.postimg.cc/Ls0ky7Cd/image.jpg" classNameName="card-img-top" alt="..." width="150px" height="150px"/>
+         <div classNameName="card-body border primary">
+         <h5 classNameName="card-title">Water Leak Repair</h5>
+           <h5 classNameName="card-title">
+           <a href="/AddJob" classNameName="btn btn-primary mt-3" onClick={handleClick}>Post A Job Request</a>
+            <a href="/Consult" classNameName="btn btn-primary mt-3"onClick={handleClickAgain}>Request Consultation</a>
            </h5>
            </div>
          </div>
          </div>
          </div>
-         </div>
+         </div> */}
       
-         <p>
+      <p className="col-sm col p-4 fs-2">
            If you have any questions or would like ideas before you create a job, please request an online consultation to ensure we can handle your request in the most efficient way to meet your needs.  If you are ready to schedule click the add a job tab above and someone will contact you.
          </p>
-       </div>
+      
+       <div className="col-sm fs-5 fs-2">           
+    <footer className="bg-black text-white text-center position-relative">
+        <p className="lead pb-3">Copyright &copy; 2023 IndyFIXER</p>
+        <div  className="position-absolute bottom-0 end-0">
+    </div>
+</footer>
        </div>
 
      

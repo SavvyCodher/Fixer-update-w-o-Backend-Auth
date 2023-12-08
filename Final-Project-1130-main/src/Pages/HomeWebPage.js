@@ -174,7 +174,7 @@ Dexterity: Because handymen work with their hands, they need to be agile and dex
 
 
 
-  <div className="accordion-item">
+ {/*} <div className="accordion-item">
       <h2 className="accordion-header">
       <button 
             className="accordion-button collapsed" 
@@ -192,7 +192,7 @@ Dexterity: Because handymen work with their hands, they need to be agile and dex
         </div>
       </div>
     </div>              
-  </div>
+    </div> 
 
   <div className="container border border-black">
     <div className="text-center row fs-2 p-3"><strong>Our Location</strong></div>
@@ -223,9 +223,10 @@ Dexterity: Because handymen work with their hands, they need to be agile and dex
           Phone: 317-255-3030<br></br> 
         </div>
       </div>
-    </div>
+    </div> */}
    
     </div>
+
        <div className="col-sm fs-5 fs-2">           
     <footer className="bg-black text-white text-center position-relative">
         <p className="lead pb-3">Copyright &copy; 2023 IndyFIXER</p>

@@ -31,9 +31,9 @@ const Flooring = () => {
   
          <div className="container fs-2 p-3 fw-bold text-center">
          Flooring Services</div>
-        {/*<div className="btn-toolbar"><button>Request Consultation</button><button>Add A Job</button></div> */}
+       
 
-        <div classname="container p-3">
+   
        <div className="col-sm col p-4 fs-2">
           <p>IndyFIXER offers flooring services from experienced contractors that are licensed, bonded, and insured.  We are well qualified to meet your needs and deliver 100% satisfaction.  With our job right guarantee you can schedule with confidence and know that our job isn't done until it meets the customer standards. You can customize your service based on these flooring types: </p>
         </div>
@@ -87,7 +87,7 @@ const Flooring = () => {
   <p className="col-sm col p-4 fs-2">
             If you have any questions or would like ideas before you create a job, please request an online consultation to ensure we can handle your request in the most efficient way to meet your needs.  If you are ready to schedule click the post a job tab above to begin.
           </p>
-        </div>
+ 
         
 
         <div className="col-sm fs-5 fs-2">           

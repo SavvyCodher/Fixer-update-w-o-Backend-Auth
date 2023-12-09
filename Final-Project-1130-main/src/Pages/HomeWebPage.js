@@ -1,24 +1,12 @@
 import Cards from '../Cards/Cards'
-import Navbar from './Navbar'
-import './Navbar.css';
 import './HomeWebPage.css'
+import Nbar from './Nbar';
 
 const HomePage = () => {
     return(
         <>
       
-        <nav className="bg-black navbar-dark py-3">
-    
-      <div className="col-sm fs-5  pt-2  navbar-brand fs-2 ps-5"> 
-    
-        <div className=" justify-content-center">
-          <img src="https://i.postimg.cc/wBf3kxrr/Final-Logo-2.png" width="200" height="120" alt="Logo"></img>
-      </div>
-    </div>
-
-    <div className="row"/>
-      <div className="btn toolbar align-items-center"> <Navbar /></div>
-      </nav>
+     <div><Nbar/></div>
       
   
          <div className="container fs-2 p-3 fw-bold border border-black text-center">
@@ -143,7 +131,7 @@ const HomePage = () => {
 </div></div>
 
  
-  <div className="container border border-black">
+{/*  <div className="container border border-black">
     <div className=" text-center row fs-2 p-3"><strong>Frequently Asked Questions</strong></div>
   </div>
 
@@ -174,7 +162,7 @@ Dexterity: Because handymen work with their hands, they need to be agile and dex
 
 
 
- {/*} <div className="accordion-item">
+ } <div className="accordion-item">
       <h2 className="accordion-header">
       <button 
             className="accordion-button collapsed" 
@@ -225,15 +213,11 @@ Dexterity: Because handymen work with their hands, they need to be agile and dex
       </div>
     </div> */}
    
-    </div>
-
-       <div className="col-sm fs-5 fs-2">           
-    <footer className="bg-black text-white text-center position-relative">
-        <p className="lead pb-3">Copyright &copy; 2023 IndyFIXER</p>
-        <div  class="position-absolute bottom-0 end-0">
-    </div>
-</footer>
-</div>
+   <div className="col-sm fs-5 fs-2">           
+    <footer className="footer bg-black text-white text-center position-relative">
+        <p className="lead pb-5">Copyright &copy; 2023 IndyFIXER</p>
+        <div  className="position-fixed bottom-0 end-0">
+            </div></footer></div>
     </>
         
     )

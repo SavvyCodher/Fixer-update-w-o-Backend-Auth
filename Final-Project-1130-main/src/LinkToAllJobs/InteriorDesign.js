@@ -1,4 +1,4 @@
-import Navbar from "../Pages/Navbar";
+import Nbar from '../Pages/Nbar';
 import './InteriorDesign.css'
 
 
@@ -15,15 +15,8 @@ const InteriorDesign = () => {
   }
    return(
 <>
-       <nav className="bg-black navbar-dark py-3">
-     <div className="col-sm fs-5  pt-2  navbar-brand fs-2 ps-5"> 
-       <div className=" justify-content-center">
-         <img src="https://i.postimg.cc/wBf3kxrr/Final-Logo-2.png" width="200" height="120" alt="Logo"></img>
-     </div>
-   </div>
-   <div className="row"/>
-     <div className="btn toolbar align-items-center"> <Navbar /></div>
-     </nav>
+<div><Nbar/></div>
+
      
  
         <div className="container fs-2 p-3 fw-bold text-center">
@@ -58,9 +51,9 @@ const InteriorDesign = () => {
      </div> </div></div>
      <div className="col-sm col"> 
          <div className="card h-100" style={{width: 225}}>
-         <img src="https://i.postimg.cc/J4GvTcYk/image.jpg" className="card-img-top" alt="..." width="150px" height="150px"/>
+         <img src="https://i.postimg.cc/4dsj4SLJ/interior-house-painting.jpg" className="card-img-top" alt="..." width="150px" height="150px"/>
          <div className="card-body border primary">
-         <h5 className="card-title">Update</h5>
+         <h5 className="card-title">Painting</h5>
      </div> </div></div>
      <div className="col-sm col"> 
          <div className="card h-100" style={{width: 225}}>
@@ -70,8 +63,8 @@ const InteriorDesign = () => {
      </div> </div></div>
   <div className="card-footer  text-muted">
   <h5 className="card-title">
-            <a href="/AddJob" className="btn btn-primary mt-3" onClick={handleClick}>Post A Job Request</a>
-            <a href="/Consult" className="btn btn-primary mt-3"onClick={handleClickAgain}>Request Consultation</a>
+  <a href="/AddJob" className="btn bg-black btn-dark mt-3" onClick={handleClick}>Post Job</a>
+            <a href="/Consult" className="btn bg-black btn-dark mt-3"onClick={handleClickAgain}>Consult FIXER</a>
             </h5>
             </div>
             </div>
@@ -81,10 +74,10 @@ const InteriorDesign = () => {
          </p>
        
 
-       <div className="col-sm fs-5 fs-2">           
-    <footer className="bg-black text-white text-center position-relative">
-        <p className="lead pb-3">Copyright &copy; 2023 IndyFIXER</p>
-        <div  className="position-absolute bottom-0 end-0">
+         <div className="col-sm fs-5 fs-2">           
+    <footer className="footer bg-black text-white text-center position-relative">
+        <p className="lead pb-5">Copyright &copy; 2023 IndyFIXER</p>
+        <div  className="position-fixed bottom-0 end-0">
     </div>
 </footer>
 </div>

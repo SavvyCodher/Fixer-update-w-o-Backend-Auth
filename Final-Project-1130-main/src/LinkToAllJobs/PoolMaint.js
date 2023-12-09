@@ -1,4 +1,4 @@
-import Navbar from "../Pages/Navbar";
+import Nbar from '../Pages/Nbar';
 import './PoolMaint.css'
 
 
@@ -15,15 +15,8 @@ const PoolMaint = () => {
   }
    return(
 <>
-       <nav className="bg-black navbar-dark py-3">
-     <div className="col-sm fs-5  pt-2  navbar-brand fs-2 ps-5"> 
-       <div className=" justify-content-center">
-         <img src="https://i.postimg.cc/wBf3kxrr/Final-Logo-2.png" width="200" height="120" alt="Logo"></img>
-     </div>
-   </div>
-   <div className="row"/>
-     <div className="btn toolbar align-items-center"> <Navbar /></div>
-     </nav>
+<div><Nbar/></div>
+
      
  
         <div className="container fs-2 p-3 fw-bold text-center">
@@ -41,13 +34,13 @@ const PoolMaint = () => {
        <div className="card h-100" style={{width: 225}}>
        <img src="https://i.postimg.cc/rsY39gBQ/Additional-Services-Page-e1496845171159.jpg" className="card-img-top" alt="..." width="150px" height="150px"/>
          <div className="card-body border primary">
-         <h5 className="card-title">Brush and/or Vacuum Pool</h5>
+         <h5 className="card-title">Brush and Vacuum Pool</h5>
      </div> </div></div>
      <div className="col-sm col"> 
          <div className="card h-100" style={{width: 225}}>
          <img src="https://i.postimg.cc/fR63PN7h/pool-skimmer-basket.jpg" className="card-img-top" alt="..." width="150px" height="150px"/>
          <div className="card-body border primary">
-         <h5 className="card-title">Cleaning of Skimmer and/or Pump</h5>
+         <h5 className="card-title">Cleaning of Skimmer and Pump</h5>
      </div> </div></div>
      <div className="col-sm col"> 
          <div className="card h-100" style={{width: 225}}>
@@ -63,14 +56,14 @@ const PoolMaint = () => {
      </div> </div></div>
      <div className="col-sm col"> 
          <div className="card h-100" style={{width: 225}}>
-         <img src="https://i.postimg.cc/J4GvTcYk/image.jpg" className="card-img-top" alt="..." width="150px" height="150px"/>
+         <img src="https://i.postimg.cc/kXPVwNpx/pool-liner.jpg" className="card-img-top" alt="..." width="150px" height="150px"/>
          <div className="card-body border primary">
-         <h5 className="card-title">Update</h5>
+         <h5 className="card-title">Liner Replacement</h5>
      </div> </div></div>
   <div className="card-footer  text-muted">
   <h5 className="card-title">
-            <a href="/AddJob" className="btn btn-primary mt-3" onClick={handleClick}>Post A Job Request</a>
-            <a href="/Consult" className="btn btn-primary mt-3"onClick={handleClickAgain}>Request Consultation</a>
+  <a href="/AddJob" className="btn bg-black btn-dark mt-3" onClick={handleClick}>Post Job</a>
+            <a href="/Consult" className="btn bg-black btn-dark mt-3"onClick={handleClickAgain}>Consult FIXER</a>
             </h5>
             </div>
             </div>
@@ -78,12 +71,12 @@ const PoolMaint = () => {
          <p className="col-sm col p-4 fs-2">
            If you have any questions or would like ideas before you create a job, please request an online consultation to ensure we can handle your request in the most efficient way to meet your needs.  If you are ready to schedule click the add a job tab above and someone will contact you.
          </p>
-    ]
+    
 
-       <div className="col-sm fs-5 fs-2">           
-    <footer className="bg-black text-white text-center position-relative">
-        <p className="lead pb-3">Copyright &copy; 2023 IndyFIXER</p>
-        <div  className="position-absolute bottom-0 end-0">
+    <div className="col-sm fs-5 fs-2">           
+    <footer className="footer bg-black text-white text-center position-relative">
+        <p className="lead pb-5">Copyright &copy; 2023 IndyFIXER</p>
+        <div  className="position-fixed bottom-0 end-0">
     </div>
 </footer>
        </div>

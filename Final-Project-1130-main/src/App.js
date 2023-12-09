@@ -1,4 +1,6 @@
+
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import Nbar from './Pages/Nbar';
 import HomeWebPage from './Pages/HomeWebPage';
 import Flooring from './LinkToAllJobs/Flooring';
 import HomeSecurity from './LinkToAllJobs/HomeSecurity';
@@ -10,6 +12,9 @@ import Plumbing from './LinkToAllJobs/Plumbing';
 import PoolMaint from './LinkToAllJobs/PoolMaint';
 import AddJob from './LinkToAllJobs/AddJob';
 import Consult from './LinkToAllJobs/Consult';
+import CreateAccount from './Forms/CreateAccount';
+import Login from './Forms/Login';
+import MyJobs from './Pages/MyJobs';
 
 
 
@@ -37,6 +42,9 @@ function App() {
                <Route path="/Pool" element={<PoolMaint />}/>
                <Route path="/addJob" element={<AddJob />}/>
                <Route path="/Consult" element={<Consult />}/>
+               <Route path="/create" element={<CreateAccount />}/>
+               <Route path="/login" element={<Login />}/>
+               <Route path="/myjobs" element={<MyJobs />}/>
             </Routes>
          </div>
       </div>

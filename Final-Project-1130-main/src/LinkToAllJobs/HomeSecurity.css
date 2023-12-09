@@ -6,3 +6,8 @@
 .btn {
     align-items: center;
 }
+
+.footer {
+    height: 100px;
+    position: sticky;
+}

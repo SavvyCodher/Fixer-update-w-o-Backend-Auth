@@ -1,17 +1,39 @@
-.error {
-    padding: 8px;
-    border-radius: 4px;
-    background-color: pink;
+
+
+  .consulting {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .consulting label {
+    text-align: left;
+    display: block;
   }
 
-  input {
+.consulting h1 {
+  font-size: 40px;
+  color: #0a0214;
+  margin-bottom: 30px;
+}
+
+  .consulting input, .consulting textarea, .consulting select {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
     display: block;
-    width: 300px;
+  }
+
+  .consulting button {
+    background: #11e261;
+    color: #fff;
+    text-decoration: solid;
+    border: 0;
     padding: 8px;
     border-radius: 8px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 18px;
-    border: 2px solid black;
-    margin-bottom: 16px;
+    cursor: pointer;
   }
+
+
   

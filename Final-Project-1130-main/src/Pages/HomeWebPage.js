@@ -92,7 +92,7 @@ const HomePage = () => {
           <div className="card-body border primary">
             <h5 className="card-title">Flooring</h5>
             <p className="card-text">Providing solutions for residential and commercial flooring needs. We've got you covered for complete repairs and installs.
-            <a href="/floor" className="btn btn-primary mt-3">Learn More</a></p>
+            <a href="/flooring" className="btn btn-primary mt-3">Learn More</a></p>
           </div>
         </div>
       </div>

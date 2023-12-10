@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import Nbar from '../Pages/Nbar';
-
+import './Consult.css'
 const Login = () => {
 
     const [email, setEmail] = useState('');
@@ -24,19 +24,23 @@ const Login = () => {
    
                 <>
                   <div><Nbar/></div>
+                  <div className="consulting">
+                    <br />
+                    <br />
                 <h1>Log In</h1>
                 {error && <p className="error">{error}</p>}
                 <input
-                    placeholder="Your email address"
+                    placeholder="Email address"
                     value={email}
                     onChange={e => setEmail(e.target.value)} />
                 <input
                     type="password"
-                    placeholder="Your password"
+                    placeholder="Password"
                     value={password}
                     onChange={e => setPassword(e.target.value)} />
-                <button onClick={logIn}>Log In</button>
-                <Link to="/create">Don't have an account? Create one here</Link>
+                <button className= "btn bg-black btn-dark mt-1" onClick={logIn}>Log In</button>
+                <Link to="/create">No account yet? Create one</Link>
+                </div>
                 </>
             );
         }

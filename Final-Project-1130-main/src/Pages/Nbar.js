@@ -1,8 +1,12 @@
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import './Nbar.css';
+import {getAuth, signOut} from 'firebase/auth';
+import useUser from '../hooks/useUser';
 
 
 const Nbar = () => {
+  const {user} = useUser();
+  const navigate = useNavigate();
     return (
 
       <nav className="bg-black navbar-dark py-3">
@@ -11,16 +15,13 @@ const Nbar = () => {
           <img src="https://i.postimg.cc/wBf3kxrr/Final-Logo-2.png" width="200" height="120" alt="Logo"></img>
       </div>
     </div>
-    <div className="row"/>
+    <div className="row "/>
       <div className="btn toolbar align-items-center"> 
       <nav className="nav">
- <div className="row"/>
+ <div className="row "/>
       <div className="btn toolbar align-items-center">         
 <div className="links btn btn-group" role="group">
 <Link to="/"><button className="btn btn-warning">Home</button></Link>
-<Link to="/create"><button className="btn btn-warning">CreateAccount</button></Link>
-<Link to="/myjobs"><button className="btn btn-warning">My Jobs</button></Link>
-<Link to="/login"><button className="btn btn-warning">Login</button></Link>
 <Link to="/ourservices" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><button className="btn btn dropdown-toggle btn-warning dropdown">OurServices</button></Link>
     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
         <li><a class="dropdown-item" href="/interior">Interior Design</a></li>
@@ -32,6 +33,17 @@ const Nbar = () => {
         <li><a class="dropdown-item" href="/Pool">Pool Maintenance</a></li>
         <li><a class="dropdown-item" href="/security">Home Security</a></li>
    </ul> 
+<Link to="/myjobs"><button className="btn btn-warning">My Jobs</button></Link>
+<Link to="/login"> {user
+                    ? <button className="btn btn-warning" onClick= {() => {
+                      signOut(getAuth());
+                  }}> Log Out</button>
+                    : <button className="btn btn-warning" onClick={() => {
+                      navigate('/login');
+                  }} >Log In</button>}</Link>     
+                  
+
+   <Link to="/create"><button className="btn btn-warning">CreateAccount</button></Link>
 </div>  
 </div>   
 </nav>

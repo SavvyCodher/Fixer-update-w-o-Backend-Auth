@@ -1,10 +1,13 @@
 import Nbar from '../Pages/Nbar';
-import './Flooring.css'
+import './Flooring.css';
+import useUser from '../hooks/useUser';
 
 
 
 
 const Flooring = () => {
+
+  const {user, isLoading} = useUser();  // is the user logged in
 
   const handleClick = () => {
     
@@ -67,8 +70,14 @@ const Flooring = () => {
      </div> </div></div>
   <div className="card-footer  text-muted">
   <h5 className="card-title">
-  <a href="/AddJob" className="btn bg-black btn-dark mt-3" onClick={handleClick}>Post Job</a>
-            <a href="/Consult" className="btn bg-black btn-dark mt-3"onClick={handleClickAgain}>Consult FIXER</a></h5>
+  {user 
+      ? <a href="/AddJob" className="btn bg-black btn-dark mt-3" onClick={handleClick}>Post Job</a>
+      : <button className="btn bg-black btn-dark mt-3" >Log In to Post Jobs</button>}  
+     
+  {user
+      ? <a href="/Consult" className="btn bg-black btn-dark mt-3"onClick={handleClickAgain}>Consult FIXER</a>
+      : <button className="btn bg-black btn-dark mt-3" >Log In to Request Consult</button>}
+      </h5>
           
   </div>
   </div>

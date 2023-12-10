@@ -7,9 +7,6 @@ import useUser from '../hooks/useUser';
 const Categories = ["Interior Design", "Flooring", "Plumbing", "Housekeeping", "Landscaping", "Mounting", "Pool Maintenance", "Home Security" ]
 
 const AddJob = () => {
-
-
-
   const [ServiceRequest, setServiceRequest] = useState('');
   const [Desc, setDesc] = useState('');
   const [DatePosted, setDatePosted] = useState('');
@@ -25,25 +22,28 @@ const AddJob = () => {
 
       const navigate = useNavigate();  
         
-      const SubmitJob = async() => {
+      const SubmitJob = async (e) => {
+        e.preventDefault()
         const NewJob = {
-            ServiceRequest, Desc, DatePosted, JobCategory, DateNeeded, TimeSlot, Email, City, ZipCode
+          ServiceRequest, Desc, DatePosted, JobCategory, DateNeeded, TimeSlot, Email, City, ZipCode
         }
         try {
-            await fetch ("http://localhost:3001/api/ads/", {
-                method:"POST", 
+            const response = await fetch("http://localhost:3001/api/ads/", {
+                method: "POST",
                 body: JSON.stringify(NewJob),
                 headers: {
-                    "Content-Type":"application/json"
+                    "Content-Type": "application/json"
                 }
             })
-            alert ("Successful")
+            if (response.ok) {
+                alert("Successful")
+            } else {
+                setError("Please fill out all fields")
+            }
 
-        } catch (error){
+        } catch (error) {
             console.log(error)
         }
-  
-    
     }
       //can we add a statement above that navigates the user to the my jobs page after adding a job
       // date posted and date needed do not show up as placeholders
@@ -56,7 +56,7 @@ return(
       <br />
       <h2>Post a Job</h2>
       {error && <p className="error">{error}</p>}
-      <form>
+      <form onSubmit={SubmitJob}>
       <label>Service Request:</label>
       <select
                
@@ -107,9 +107,10 @@ return(
         />
         <div>
         <h5 className="card-title">
-  {user 
+        
+        {user 
       ? <a href="/AddJob" className="btn bg-black btn-dark mt-3" onClick={SubmitJob}>Post Job</a>
-      : <button className="btn bg-black btn-dark mt-3" >Login to Post Jobs</button>}  
+      : <button className="btn bg-black btn-dark mt-3" >Login to Post Jobs</button>} 
       </h5>
         </div>
 
@@ -121,12 +122,6 @@ return(
     </>
     );
 }
-
-
-
-
-
-
 
 
 export default AddJob;
